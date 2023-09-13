@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="container">
+  <div class="text-center" style="margin-top: 8em;">
+   <h3 class="mb-0"><strong>{{ .Params.Name }}</strong></h3>
+    <a href="{{ .Params.ProductPageUrl }}" class="product-page-link">{{ i18n "visit-product-page" . }}</a>
+</div>
+
+{{ partial "nav-items" . }}
+
+  <div class="tab-content">
+    {{ partial "first-tab" . }}
+    {{ partial "second-tab" . }}
+  </div>
+  {{ partial "green-btn" . }}
+</div>
+{{ end }}

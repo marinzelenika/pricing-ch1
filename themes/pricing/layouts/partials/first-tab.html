@@ -69,17 +69,6 @@
 {{ i18n "total-price" . }}: $<span id="totalPrice_{{ $ppId }}">{{ $SubCharges }}</span>
         {{ end }}{{ end }}{{ end }}{{ end }}{{ end }}{{ end }}
     {{ end }}{{ end }}{{ end }}{{ end }}
-    {{/*  <h3 style="margin: 0;">${{ .SubscriptionPeriodCharge }}</h3>
-    <div class="wrapper">
-    <p style="color: green; font-size: large; margin: 0;">+$5999</p>
-    <p style="font-size: x-small; color: grey; margin: 0; margin-left: .3em">{{ i18n "per-developer-per-month" . }}</p>
-    </div>
-    <p style="font-size: small"><a href="https://consulting.conholdate.com">{{ i18n "with-paid-consulting" . }}</a></p>
-    {{ $linkUrlwPaidConsulting := print "https://purchase.conholdate.com/buy/cart?ppId=" ""
-          $ppId "&paidConsulting=true" }}
-        <a class="btn btn-primary btn-lg fam-pack-btn1 add-to-cart d-flex justify-content-center align-items-center" href="{{ $linkUrlwPaidConsulting }}" target="_blank"
-            ><span>{{ i18n "select-only" . }}</span></a
-          >  */}}
           <a class="btn btn-primary btn-lg fam-pack-btn1 d-flex justify-content-center align-items-center mt-4" href="{{ $linkUrl }}" target="_blank" id="myLink_{{ $ppId }}"
             ><span style="margin: auto">{{ i18n "select-only" . }}</span></a
           >
